@@ -274,8 +274,8 @@ namespace LearnCodeFirstApproach
 
             try
             {
-                List<JoinedTable> joinedtable = ctx.Set<JoinedTable>().FromSqlRaw("OrderDetails").ToList();
-                foreach (var cust in joinedtable)
+                List<JoinedTable> jointable = ctx.Set<JoinedTable>().FromSqlRaw("OrderDetails").ToList();
+                foreach (var cust in jointable)
                 {
                     Console.WriteLine(cust.Id + "  " + cust.Name + " " + cust.Order_Id);
                 }
@@ -284,7 +284,7 @@ namespace LearnCodeFirstApproach
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.InnerException.Message);
+                Console.WriteLine(ex.Message);
             }
         }
     }

@@ -39,12 +39,7 @@ namespace LearnCodeFirstApproach.Data
             {
                 entity.HasNoKey();
 
-                entity.Property(e => e.Id);
-                entity.Property(e => e.Name);
-                entity.Property(e => e.Age);
-                entity.Property(e => e.Order_Id);
-                entity.Property(e => e.OrderDate);
-                entity.Property(e => e.OrderAmt);
+              
             });
         }
 
